@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "angular-todo-jackson": {
+      "hosting": {
+        "angular-todo": [
+          "angular-todo-jackson"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "angular-todo-jackson"
+  }
+}
