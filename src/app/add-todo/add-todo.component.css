@@ -1,0 +1,29 @@
+.addtodo_input {
+  background: transparent;
+  font-size: 2rem;
+  border: 2px solid white;
+  padding: 1rem;
+  transition: all .1s linear;
+  color: white;
+  width: 100%;
+}
+
+.addtodo_input:focus {
+  outline: none;
+  background: rgba(224, 224, 224, 0.2);
+}
+
+.addtodo_input:hover {
+  background: rgba(224, 224, 224, 0.2);
+}
+
+.addtodo_input::placeholder {
+  color: rgba(255, 255, 255, 0.438)
+}
+
+@media all and (max-width: 600px) {
+  .addtodo_input {
+    font-size: 1.8rem;
+    padding: .8rem;
+  }
+}

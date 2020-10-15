@@ -1,0 +1,16 @@
+
+<div *ngIf="todoService" class="todo_container">
+  <div *ngFor="let todo of todoService.getTodos()" [ngClass]="{'completed_container' : todo.completed}" class="todo" (click)="todoService.toggleCompleted(todo.id)">
+    
+    <ng-container *ngIf="todo.edit; else elseTemplate">
+      <input type="text" class="todo_edit_input" id="todo_{{todo.id}}" [(ngModel)]="todo.text" (keyup.enter)="handleKeypress(todo)"/>
+    </ng-container>
+    <ng-template #elseTemplate>
+      <p class="todo_text" [ngClass]="{'completed_text' : todo.completed}">{{todo.text}}</p>
+    </ng-template>
+    
+    <i *ngIf="!todo.edit && !todo.completed" class="fas fa-cog todo_icon todo_edit" (click)="todoService.toggleEdit(todo.id)"></i>
+    <i class="fas fa-times todo_icon todo_remove" *ngIf="todo.completed" (click)="todoService.remove(todo.id)"></i>
+    <i class="fas fa-check todo_icon todo_save" *ngIf="todo.edit" (click)="todoService.toggleEdit(todo.id)"></i>
+  </div>
+</div>

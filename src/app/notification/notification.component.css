@@ -1,0 +1,29 @@
+.notification {
+  padding: 1.5rem;
+  background: rgba(192, 113, 113, 0.858);
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  width: 700px;
+  transition: all .3s ease-in-out;
+  border-radius: 10px;
+  opacity: 0;
+}
+
+.show {
+  opacity: 1;
+}
+
+.notification_text{
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+}
+
+@media all and (max-width: 700px) {
+  .notification {
+    width: 98vw;
+    bottom: 4px;
+    right: 4px;
+  }
+}

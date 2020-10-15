@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 40.06">
+  <defs>
+    <style>.topleftlogostyles{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:2px;}</style>
+  </defs>
+  <title>Logo</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_3" data-name="Layer 3">
+      <line id="wall_left" class="topleftlogostyles" x1="8.59" y1="40.06" x2="8.59" y2="14.69"/>
+      <path id="roof_left" class="topleftlogostyles" d="M.27,23C3.82,22,24.94,14.55,29.38.3"/>
+      <path id="roof_right" class="topleftlogostyles" d="M48.24,23C44.69,22,24.85,14.55,20.41.3"/>
+      <line id="wall_right" class="topleftlogostyles" x1="39.91" y1="40.06" x2="39.91" y2="14.69"/>
+    </g>
+  </g>
+</svg>

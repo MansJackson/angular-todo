@@ -1,0 +1,102 @@
+.todo {
+  display: flex;
+  position: relative;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.295);
+  padding: 2.5rem 3rem;
+  margin-top: 1rem;
+  order: 1;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.todo_container {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+}
+
+.todo_text {
+  text-align: left;
+  font-size: 2rem;
+}
+
+.todo_icon {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: all .1s linear;
+}
+
+.todo_remove {
+  color: rgb(206, 88, 88);
+}
+
+.todo_edit {
+  color: rgb(219, 219, 219);
+}
+
+.todo_save {
+  color: rgb(32, 126, 20);
+}
+
+.todo_edit_input {
+  width: 100%;
+  font-size: 2rem;
+  color: white;
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 3px;
+  padding: 1rem;
+}
+
+.todo_edit_input:focus {
+  outline: none;
+  background: rgba(224, 224, 224, 0.2);
+}
+
+.todo_edit_input:hover {
+  background: rgba(224, 224, 224, 0.2);
+}
+
+.todo_icon:hover {
+  font-size: 2.3rem;
+  top: 7px;
+  right: 11px;
+}
+
+.completed_text {
+  text-decoration: line-through;
+  color: rgb(187, 187, 187);
+}
+
+.completed_container {
+  order: 2;
+  background: rgba(146, 146, 146, 0.295);
+}
+
+@media all and (max-width: 600px) {
+  .todo_container {
+    width: auto;
+  }
+
+  .todo_icon {
+    font-size: 1.2rem;
+  }
+  
+  .todo {
+    padding: 1.8rem 2.2rem;
+  }
+
+  .todo_text {
+    text-align: left;
+    font-size: 1.5rem;
+  }
+
+  .todo_edit_input {
+    font-size: 1.5rem;
+    padding: .5rem;
+  }
+}
